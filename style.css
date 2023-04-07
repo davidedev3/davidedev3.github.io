@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+      font-family: 'PT Sans Narrow', sans-serif;
+
+}
+
+html {
+      background-color: #00000085;
+      box-shadow: inset 10px 10px 20px 0px #ffffff70;
+}
+
+.fa-linkedin {
+      background: #007bb5;
+      color: white;
+      font-size: xx-large;
+}
+
+a {
+      text-decoration: none;
+}
+
+h1 {
+      font-weight: bold;
+      font-size: xx-large;
+      text-shadow: #020087 1px 0 10px;
+}
+
+.cartImg img {
+      min-height: 300px;
+      min-width: 350px;
+}
+
+body {
+      margin: 15px;
+      animation: newPage 0.7s;
+      animation-timing-function: cubic-bezier(0.4, 0.1, 0.1, 0.4);
+}
+
+.rotate {
+      animation: newPage 0.5s;
+      animation-timing-function: cubic-bezier(0.4, 0.1, 0.1, 0.4);
+
+}
+
+@keyframes newPage {
+      from {
+            transform: rotateY(90deg);
+      }
+
+      to {
+            transform: rotateY(0deg);
+      }
+
+}
+
+
+
+header {
+      display: flex;
+      width: 100%;
+}
+
+header h1 {
+      border-radius: 50px 50px 0 0;
+      border: none;
+      box-shadow: inset 0px 15px 20px -10px #08080869;
+      background-color: white;
+      line-height: 40px;
+      padding: 20px;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+}
+
+
+#searchBar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 0 20px 0;
+      background-color: white;
+}
+
+#searchBar input {
+      width: 60%;
+      font-size: medium;
+      box-shadow: 2px -2px 3px black;
+}
+
+#allProjects,
+#aboutPageBody {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      background-color: white;
+      justify-content: space-around;
+}
+
+
+.projectContainers {
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+      justify-content: center;
+      border-radius: 25px;
+      padding: 15px;
+      margin-bottom: 40px;
+}
+
+.presentationP {
+      text-align: center;
+      padding-bottom: 20px;
+      margin: 0;
+}
+
+h2 {
+      text-align: center;
+
+}
+
+.changeCardBtn {
+      box-shadow: inset 4px -8px 20px 4px #020087;
+      border-radius: 15px;
+      height: 40px;
+      width: 60%;
+      margin: 20px 0;
+      align-self: center;
+}
+
+.frontend {
+      box-shadow: inset -4px 5px 40px 5px #020087;
+}
+
+.backend {
+      box-shadow: inset -4px 5px 40px 5px rgb(10, 83, 0);
+      ;
+}
+
+.fullstack {
+      box-shadow: inset -4px 5px 40px 5px #990000;
+}
+
+
+.projectContainers h3 {
+      padding: 0 10px;
+      font-size: large;
+      margin: 0;
+      font-weight: normal;
+}
+
+.internalProjectContainers {
+      display: flex;
+}
+
+.cartImg {
+      width: 65%;
+      border-radius: 25px;
+}
+
+#lensIcon,
+#quitIcon {
+      height: 1em;
+      margin-left: -20px;
+}
+
+#quitIcon {
+      display: none;
+}
+
+footer {
+      display: flex;
+      height: 4vh;
+      justify-content: space-around;
+      align-items: center;
+      font-size: large;
+      background-color: white;
+      padding: 20px 0;
+      border-radius: 0 0 50px 50px;
+      box-shadow: -7px 20px 15px 0px #080808;
+      margin-bottom: 60px;
+      border-top: solid 1px;
+}
+
+footer a {
+      font-size: x-large;
+      color: black
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1px) and (max-width: 380px) {
+      .internalProjectContainers {
+            flex-direction: column;
+            align-items: center;
+      }
+
+      #searchBar {
+            padding: 40px 0 20px 0;
+      }
+
+      #searchBar input {
+            width: 90%;
+      }
+
+      #allProjects {
+            align-content: center;
+            flex-direction: column;
+            padding: 0;
+      }
+
+      .cartImg {
+            width: 100%;
+      }
+
+      .projectContainers h3 {
+            padding: 10px;
+      }
+
+      .projectContainers {
+            width: 90%;
+      }
+
+      #services {
+            font-size: large;
+      }
+
+
+}
+
+@media screen and (min-width: 380px) and (max-width: 580px) {
+      #projects {
+            font-size: xx-large;
+      }
+
+      #services {
+            font-size: x-large;
+      }
+
+}
+
+@media screen and (min-width: 380px) and (max-width: 770px) {
+      .internalProjectContainers {
+            flex-direction: column;
+            align-items: center;
+      }
+
+      #searchBar {
+            padding: 40px 0 20px 0;
+      }
+
+      #searchBar input {
+            width: 90%;
+      }
+
+      #allProjects {
+            align-content: center;
+            flex-direction: column;
+            padding: 0;
+      }
+
+      .cartImg {
+            width: 100%;
+      }
+
+      .projectContainers h3 {
+            padding: 10px;
+      }
+
+      .projectContainers {
+            width: 90%;
+      }
+
+
+
+}
+
+
+@media screen and (min-width: 770px) and (max-width: 1300px) {
+      .internalProjectContainers {
+            flex-direction: column;
+            align-items: center;
+      }
+
+      #searchBar {
+            padding: 40px 0 20px 0;
+      }
+
+      #searchBar input {
+            width: 90%;
+      }
+
+      #allProjects {
+            align-content: center;
+            flex-direction: column;
+            padding: 0;
+      }
+
+      .cartImg {
+            width: 100%;
+      }
+
+      .projectContainers h3 {
+            padding: 10px;
+      }
+
+      .projectContainers {
+            width: 90%;
+            padding: 0 25px;
+      }
+
+
+
+}
+
+@media screen and (min-width: 770px) and (max-width: 1450px) {
+      #stepCardsContainer {
+            flex-direction: column;
+            width: 100%;
+            align-items: center
+      }
+
+      .stepCard {
+            width: 80%;
+            align-content: center;
+            padding-bottom: 30px;
+      }
+
+      .projectImg {
+            aspect-ratio: 2/1;
+            height: auto;
+      }
+
+      .h3About,
+      .h2About {
+            margin: 10px
+      }
+
+      .secondaryTextContainer p {
+            margin: 0;
+      }
+
+
+
+}
+
+@media screen and (min-width: 420px) and (max-width: 770px) {
+      #stepCardsContainer {
+            flex-direction: column;
+            width: 100%;
+            align-items: center
+      }
+
+      .stepCard {
+            width: 100%;
+            align-content: center;
+            padding-bottom: 30px;
+      }
+
+      .projectImg {
+            aspect-ratio: 2/1;
+            height: auto;
+      }
+
+      .h3About,
+      .h2About {
+            margin: 10px
+      }
+
+      .secondaryTextContainer p {
+            margin: 0;
+      }
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 450px) {
+      #stepCardsContainer {
+            flex-direction: column;
+            width: 100%;
+            align-items: center
+      }
+
+      .stepCard {
+            width: 100%;
+            align-content: center;
+            padding-bottom: 30px;
+      }
+
+      .projectImg {
+            aspect-ratio: 2/1;
+            height: auto;
+      }
+
+      .h3About,
+      .h2About {
+            margin: 10px
+      }
+
+      .secondaryTextContainer p {
+            margin: 0;
+      }
+
+      .primaryTextContainer {
+            flex-direction: column;
+      }
+
+      .secondaryTextContainer {
+            width: 100%;
+      }
+
+      .stepCard {
+            padding-top: 40px;
+      }
+
+      h2 {
+            font-size: medium;
+      }
+
+      p {
+            font-size: small;
+      }
+}
